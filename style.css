@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 body {
   border: 0;
   padding: 0;
@@ -140,7 +138,7 @@ h1 {
 .btn-pulsante {
   font-family: 'Bebas Neue', sans-serif;
   display: inline-block;
-  padding: 20px;
+  padding: 30px;
   background-color: #00b4fc;
   color: white;
   text-decoration: none;
@@ -214,8 +212,12 @@ h1 {
   }
 
   .btn-pulsante {
-    padding: 15px;
-    font-size: 14px;
+    padding: 25px 30px;
+    font-size: 20px;
+  }
+
+  .hero-cta-3 {
+    margin-top: 0;
   }
 
   .carousel img {
