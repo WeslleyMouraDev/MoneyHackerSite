@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/fundo.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.hero-call {
+  flex: 1;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 2px solid #ff9900;
+  backdrop-filter: blur(20px);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.hero-call::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/logo.webp');
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.hero-cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-call .headline-1 {
+  font-size: 45px;
+  padding-top: 20px;
+  font-weight: 900;
+  margin-bottom: 2px;
+}
+
+.hero-call .headline-1 span {
+  padding-top: 40px;
+  color: #00ff00;
+}
+
+.hero-cta .hero-cta-1 {
+  padding-top: 3px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.hero-cta .hero-cta-2 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.hero-cta .hero-cta-3 {
+  font-size: 16px;
+  padding-top: 30px;
+}
+
+.hero-cta .hero-cta-4 {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.store-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.store-links img {
+  width: 150px;
+}
+
+.btn-pulsante {
+  display: inline-block;
+  padding: 20px;
+  background-color: #00b4fc;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  animation: pulsar 0.5s infinite alternate;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.btn-pulsante:hover {
+  background-color: #0091d4;
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-personalizada {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.feedbacks {
+  text-align: center;
+}
