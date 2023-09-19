@@ -11,6 +11,49 @@ h1 {
   font-size: 55px;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #120f09;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader img {
+  width: 30%;
+  padding-bottom: 20px;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: '';
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #ff9900;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 .carousel img {
   border: 2px solid #ff9900;
   border-radius: 20px;
@@ -170,6 +213,15 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-content {
+  color: white;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  backdrop-filter: blur(20px);
 }
 
 @media screen and (max-width: 768px) {
